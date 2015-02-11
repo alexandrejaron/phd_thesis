@@ -1,0 +1,125 @@
+%input macros (i.e. write your own macros file called MacroFile1.tex)
+%\include{Macros/MacroFile1}
+
+ \documentclass[oneside,12pt]{Classes/CUEDthesisPSnPDF}
+
+
+\ifpdf
+    \pdfinfo { /Title  (QoS-Aware Routing in Future All-IP Access Networks)
+               /Creator (Alexandre Jaron)
+               /Producer (Alexandre Jaron)
+               /Author (Alexandre Jaron alexandre.jaron@kcl.ac.uk)
+               /CreationDate (D:20140713000000)  %format D:YYYYMMDDhhmmss
+               /ModDate (D:20030815213532)
+               /Subject (Writing a PhD thesis in LaTeX)
+               /Keywords (PhD, Thesis)}
+    \pdfcatalog { /PageMode (/UseOutlines)
+                  /OpenAction (fitbh)  }
+\fi
+
+\title{QoS-Aware Routing in Future \\
+        All-IP Access Networks}
+
+\ifpdf
+  \author{\href{mailto:alexandre.jaron@kcl.ac.uk}{Alexandre Jaron}}
+  \collegeordept{\href{http://www.kcl.ac.uk/nms/depts/informatics/research/telecomms/}{Centre for Telecommunications Research}}
+  \university{\href{http://www.kcl.ac.uk}{King's College London}}
+% insert below the file name that contains the crest in-place of 'UnivShield'
+  \crest{\includegraphics[width=35mm,height=30mm, trim= 10mm 8mm 12mm 12mm]{kcllogo}}
+\else
+  \author{Alexandre Jaron}
+  \collegeordept{Centre for Telecommunciations Research}
+  \university{King's College London}
+% insert below the file name that contains the crest in-place of 'UnivShield'
+  \crest{\includegraphics[bb = 0 0 292 336, width=30mm]{kcllogo}}
+\fi
+%
+% insert below the file name that contains the crest in-place of 'UnivShield'
+% \crest{\IncludeGraphicsW{UnivShield}{40mm}{14 14 73 81}}
+%
+\renewcommand{\submittedtext}{A thesis submitted to King's College London in partial fulfilment of the requirements for the degree of}
+\degree{Doctor of Philosophy}
+
+\degreedate{February 2015}
+
+% turn of those nasty overfull and underfull hboxes
+\hbadness=10000
+\hfuzz=50pt
+
+% Put all the style files you want in the directory StyleFiles and usepackage like this:
+\usepackage{StyleFiles/watermark}
+
+% Comment out the next line to get single spacing
+\onehalfspacing
+
+% To insert a blank page
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\begin{document}
+
+%\language{english}
+
+% A page with the abstract on including title and author etc may be
+% required to be handed in separately. If this is not so, then comment
+% the below 3 lines (between '\begin{abstractseparte}' and 
+% 'end{abstractseparate}'), normally like a declaration ... needs some more
+% work, mind as environment abstracts creates a new page!
+% \begin{abstractseparate}
+%   \input{Abstract/abstract}
+% \end{abstractseparate}
+
+
+
+
+% Using the watermark package which is in StyleFiles/
+% and to remove DRAFT COPY ONLY appearing on the top of all pages comment out below line
+%\watermark{DRAFT COPY ONLY}
+
+
+\maketitle
+
+%set the number of sectioning levels that get number and appear in the contents
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\frontmatter % book mode only
+\pagenumbering{roman}
+\afterpage{\blankpage}
+\include{Dedication/dedication} 
+\afterpage{\blankpage}
+\include{Acknowledgement/acknowledgement}
+\afterpage{\blankpage}
+\include{Abstract/abstract}
+\afterpage{\blankpage}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\printnomenclature[0.5in]  %% Print the nomenclature
+% \addcontentsline{toc}{chapter}{List of Abbreviations}
+
+\mainmatter % book mode only
+\include{Introduction/introduction}
+\include{Chapter1/chapter1}
+\include{Chapter2/chapter2}
+\include{Chapter3/chapter3}
+\include{Conclusions/conclusions}
+
+\backmatter % book mode only
+\appendix
+\include{Appendix1/appendix1}
+\include{Appendix2/appendix2}
+
+% \bibliographystyle{plainnat}
+\bibliographystyle{Classes/CUEDbiblio}
+% \bibliographystyle{Classes/jmb}
+% \bibliographystyle{Classes/jmb} % bibliography style
+\renewcommand{\bibname}{References} % changes default name Bibliography to References
+\bibliography{References/references} % References file
+
+\end{document}
