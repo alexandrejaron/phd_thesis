@@ -1,6 +1,5 @@
 #!/bin/bash
-# A script to compile the PhD Thesis - Krishna Kumar 
-# Distributed under GPLv2.0 License
+# A script to compile the PhD Thesis - Alexandre Jaron
 
 compile="compile";
 clean="clean";

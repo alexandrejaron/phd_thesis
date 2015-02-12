@@ -2,35 +2,35 @@
 
  \nomgroup{A}
 
-  \item [{$F$}]\begingroup complex function\nomeqref {2.1}
-		\nompageref{3}
+  \item [{$F$}]\begingroup complex function\nomeqref {1.1}
+		\nompageref{1}
 
  \nomgroup{G}
 
-  \item [{$\gamma$}]\begingroup a simply closed curve on a complex plane\nomeqref {2.1}
-		\nompageref{3}
-  \item [{$\iota$}]\begingroup unit imaginary number $\sqrt{-1}$\nomeqref {2.1}
-		\nompageref{3}
-  \item [{$\pi$}]\begingroup  $\simeq 3.14\ldots$\nomeqref {2.1}
-		\nompageref{3}
+  \item [{$\gamma$}]\begingroup a simply closed curve on a complex plane\nomeqref {1.1}
+		\nompageref{1}
+  \item [{$\iota$}]\begingroup unit imaginary number $\sqrt{-1}$\nomeqref {1.1}
+		\nompageref{1}
+  \item [{$\pi$}]\begingroup  $\simeq 3.14\ldots$\nomeqref {1.1}
+		\nompageref{1}
 
  \nomgroup{R}
 
-  \item [{$j$}]\begingroup superscript index\nomeqref {2.1}
-		\nompageref{3}
+  \item [{$j$}]\begingroup superscript index\nomeqref {1.1}
+		\nompageref{1}
 
  \nomgroup{S}
 
-  \item [{$0$}]\begingroup subscript index\nomeqref {2.1}\nompageref{3}
+  \item [{$0$}]\begingroup subscript index\nomeqref {1.1}\nompageref{1}
 
  \nomgroup{X}
 
-  \item [{$\oint_\gamma$}]\begingroup integration around a curve $\gamma$\nomeqref {2.1}
-		\nompageref{3}
+  \item [{$\oint_\gamma$}]\begingroup integration around a curve $\gamma$\nomeqref {1.1}
+		\nompageref{1}
 
  \nomgroup{Z}
 
-  \item [{$CIF$}]\begingroup Cauchy's Integral Formula\nomeqref {2.1}
-		\nompageref{3}
+  \item [{$CIF$}]\begingroup Cauchy's Integral Formula\nomeqref {1.1}
+		\nompageref{1}
 
 \end{thenomenclature}

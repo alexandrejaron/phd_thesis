@@ -1,0 +1,6 @@
+PWD /Users/alexandrejaron/Desktop/phd-thesis-template-1.4.5
+INPUT /usr/local/texlive/2014/texmf.cnf
+INPUT /usr/local/texlive/2014/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2014/texmf-var/web2c/pdftex/latex.fmt
+INPUT thesis-info.tex
+OUTPUT thesis-info.log
